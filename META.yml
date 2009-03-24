@@ -1,0 +1,21 @@
+---
+author:
+  - 'Ricardo SIGNES <rjbs@cpan.org>'
+distribution_type: module
+generated_by: 'Module::Install version 0.79'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Email-Sender-Transport-SQLite
+no_index:
+  directory:
+    - inc
+    - t
+requires:
+  DBD::SQLite: 0
+  DBI: 0
+  Email::Sender: 0.004
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.002
