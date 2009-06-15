@@ -1,15 +1,20 @@
-use inc::Module::Install;
 
-name          'Email-Sender-Transport-SQLite';
-author        'Ricardo SIGNES <rjbs@cpan.org>';
-license       'perl';
-version_from  'lib/Email/Sender/Transport/SQLite.pm';
+use strict;
+use warnings;
 
-# NON-CORE PREREQUISITES
-requires('Email::Sender'    => 0.004);   # moosified release
-requires('DBI'                  => 0);  # minimum unknown
-requires('DBD::SQLite'          => 0);  # minimum unknown
+use ExtUtils::MakeMaker;
 
-auto_manifest;
-
-WriteAll();
+WriteMakefile(
+  DISTNAME  => 'Email-Sender-Transport-SQLite',
+  NAME      => 'Email::Sender::Transport::SQLite',
+  AUTHOR    => 'Ricardo\ Signes\ \<rjbs\@cpan\.org\>',
+  ABSTRACT  => 'deliver\ mail\ to\ an\ sqlite\ db\ for\ testing',
+  VERSION   => '0.091660',
+  EXE_FILES => [ qw() ],
+  (eval { ExtUtils::MakeMaker->VERSION(6.21) } ? (LICENSE => 'perl') : ()),
+  PREREQ_PM    => {
+    "DBD::SQLite" => '0',
+    "Email::Sender" => '0.091660',
+    "DBI" => '0',
+  },
+);

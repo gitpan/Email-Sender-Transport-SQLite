@@ -1,0 +1,22 @@
+{
+   "resources" : {
+      "repository" : "http://github.com/rjbs/email-sender-transport-sqlite/tree"
+   },
+   "meta-spec" : {
+      "version" : 1.4,
+      "url" : "http://module-build.sourceforge.net/META-spec-v1.4.html"
+   },
+   "generated_by" : "Dist::Zilla::Plugin::MetaJSON version 1.091480",
+   "version" : "0.091660",
+   "name" : "Email-Sender-Transport-SQLite",
+   "author" : [
+      "Ricardo Signes <rjbs@cpan.org>"
+   ],
+   "license" : "perl",
+   "requires" : {
+      "DBD::SQLite" : "0",
+      "Email::Sender" : "0.091660",
+      "DBI" : "0"
+   },
+   "abstract" : "deliver mail to an sqlite db for testing"
+}
