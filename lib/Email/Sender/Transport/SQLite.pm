@@ -1,6 +1,7 @@
 package Email::Sender::Transport::SQLite;
-our $VERSION = '0.091660';
-
+{
+  $Email::Sender::Transport::SQLite::VERSION = '0.092000';
+}
 use Moose;
 with 'Email::Sender::Transport';
 # ABSTRACT: deliver mail to an sqlite db for testing
@@ -98,7 +99,6 @@ no Moose;
 1;
 
 __END__
-
 =pod
 
 =head1 NAME
@@ -107,7 +107,7 @@ Email::Sender::Transport::SQLite - deliver mail to an sqlite db for testing
 
 =head1 VERSION
 
-version 0.091660
+version 0.092000
 
 =head1 DESCRIPTION
 
@@ -140,15 +140,14 @@ Delivery to this transport should never fail.
 
 =head1 AUTHOR
 
-  Ricardo Signes <rjbs@cpan.org>
+Ricardo Signes <rjbs@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2009 by Ricardo Signes.
+This software is copyright (c) 2011 by Ricardo Signes.
 
 This is free software; you can redistribute it and/or modify it under
-the same terms as perl itself.
+the same terms as the Perl 5 programming language system itself.
 
-=cut 
-
+=cut
 

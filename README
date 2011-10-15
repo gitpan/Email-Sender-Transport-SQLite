@@ -1,12 +1,13 @@
 
 
-This archive contains the distribution Email-Sender-Transport-SQLite, version
-0.091660:
+This archive contains the distribution Email-Sender-Transport-SQLite,
+version 0.092000:
 
   deliver mail to an sqlite db for testing
 
-This software is copyright (c) 2009 by Ricardo Signes.
+This software is copyright (c) 2011 by Ricardo Signes.
 
 This is free software; you can redistribute it and/or modify it under
-the same terms as perl itself.
+the same terms as the Perl 5 programming language system itself.
+
 
