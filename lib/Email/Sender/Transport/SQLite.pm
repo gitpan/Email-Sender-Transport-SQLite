@@ -1,8 +1,8 @@
 package Email::Sender::Transport::SQLite;
 {
-  $Email::Sender::Transport::SQLite::VERSION = '0.092000';
+  $Email::Sender::Transport::SQLite::VERSION = '0.092001';
 }
-use Moose;
+use Moo;
 with 'Email::Sender::Transport';
 # ABSTRACT: deliver mail to an sqlite db for testing
 
@@ -40,7 +40,7 @@ sub dbh {
 
 has db_file => (
   is      => 'ro',
-  default => 'email.db',
+  default => sub { 'email.db' },
 );
 
 sub _setup_dbh {
@@ -95,10 +95,11 @@ sub send_email {
 }
 
 __PACKAGE__->meta->make_immutable;
-no Moose;
+no Moo;
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -107,7 +108,7 @@ Email::Sender::Transport::SQLite - deliver mail to an sqlite db for testing
 
 =head1 VERSION
 
-version 0.092000
+version 0.092001
 
 =head1 DESCRIPTION
 
@@ -144,10 +145,9 @@ Ricardo Signes <rjbs@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Ricardo Signes.
+This software is copyright (c) 2013 by Ricardo Signes.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

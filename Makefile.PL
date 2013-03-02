@@ -12,6 +12,7 @@ my %WriteMakefileArgs = (
   "ABSTRACT" => "deliver mail to an sqlite db for testing",
   "AUTHOR" => "Ricardo Signes <rjbs\@cpan.org>",
   "BUILD_REQUIRES" => {
+    "File::Find" => 0,
     "File::Spec" => 0,
     "File::Temp" => 0,
     "Test::More" => "0.96",
@@ -30,9 +31,9 @@ my %WriteMakefileArgs = (
     "DBI" => 0,
     "Email::Sender" => "0.091660",
     "Email::Sender::Transport" => 0,
-    "Moose" => 0
+    "Moo" => 0
   },
-  "VERSION" => "0.092000",
+  "VERSION" => "0.092001",
   "test" => {
     "TESTS" => "t/*.t"
   }
