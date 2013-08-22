@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution Email-Sender-Transport-SQLite,
-version 0.092001:
+version 0.092002:
 
   deliver mail to an sqlite db for testing
 

@@ -1,6 +1,6 @@
 package Email::Sender::Transport::SQLite;
 {
-  $Email::Sender::Transport::SQLite::VERSION = '0.092001';
+  $Email::Sender::Transport::SQLite::VERSION = '0.092002';
 }
 use Moo;
 with 'Email::Sender::Transport';
@@ -108,7 +108,7 @@ Email::Sender::Transport::SQLite - deliver mail to an sqlite db for testing
 
 =head1 VERSION
 
-version 0.092001
+version 0.092002
 
 =head1 DESCRIPTION
 
